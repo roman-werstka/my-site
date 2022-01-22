@@ -150,6 +150,11 @@ body {
   text-align: center;
 }
 
+.blog-image {
+  margin: 34px 0 24px;
+  text-align: center;
+}
+
 .projects p {
   margin: 0 0 24px;
 }

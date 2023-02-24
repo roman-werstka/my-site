@@ -1,17 +1,30 @@
-//Audio
+// Swiper-slider===================================================================================
+const swiper = new Swiper('.swiper', {
 
-let soundButton = document.querySelector('.soundbutton'),
-    audio = document.querySelector('.audio')
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
 
-soundButton.addEventListener('click', e => {
-  soundButton.classList.toggle('paused')
-  audio.paused ? audio.play() : audio.pause()
-})
+  // Autoplay
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+});
 
-window.onfocus = function() {
-  soundButton.classList.contains('paused') ? audio.pause() :audio.play()
-}
+// scroll header=========================================================
+var minOffset = 50;
+  window.onscroll = function() {
+    let has_class = document.body.classList.contains("is_scrolled");
 
-window.onblur = function() {
-  audio.pause()
-}
+    if (minOffset < document.documentElement.scrollTop ) {
+      if (!has_class) {
+          document.body.classList.add("is_scrolled");
+      }
+    } else if (has_class) {
+      document.body.classList.remove("is_scrolled")
+
+    }
+  }

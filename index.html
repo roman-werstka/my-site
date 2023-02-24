@@ -1,81 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<title>Сайт переехал на другой домен!</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<style>
-	html, body {
-		height: 100%;
-		font-family: Roboto;
-	}
-	h1 {
-		color: white;
-	}
-	h2 {
-		color: orange;
-	}
-	h3 {
-		color: gainsboro;
-	}
-	div {
-		margin-bottom: 10px;
-		color: aliceblue;
-	}
-	div a {
-		color: antiquewhite;
-	}
-	body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		background-image: url(images/slider-bg.jpg);
-		background-size: cover;
-	}
-	</style>
-	<script>
-	// Set the date we're counting down to
-	var countDownDate = new Date("Apr 10, 2023 14:00:00").getTime();
-
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-
-	  // Get today's date and time
-	  var now = new Date().getTime();
-
-	  // Find the distance between now and the count down date
-	  var distance = countDownDate - now;
-
-	  // Time calculations for days, hours, minutes and seconds
-	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-	  // Display the result in the element with id="demo"
-	  document.getElementById("countdown").innerHTML = days + " дн. " +
-		hours + " ч " +
-		minutes + " мин " +
-		seconds + " с";
-
-	  // If the count down is finished, write some text
-	  if (distance < 0) {
-	    clearInterval(x);
-	    document.getElementById("countdown").innerHTML = "ПРЯМО СЕЙЧАС";
-	  }
-	}, 1000);
-	</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<h1>Здесь будет что-то! Пока не знаю что, но будет....</h1>
-	<h2>Новый контент будет через <span id="countdown"></span></h2>
-	<h3>Вы можете связаться со мной:</h3>
-	<div>Телеграм:  <a href="https://t.me/roman_werstka">@roman_werstka</a></div>
-	<div>Email:  <a href="mailto:roman.kovyryalov@icloud.com">roman.kovyryalov@icloud.com</a></div>
-	<div>Мой сайт:  <a href="https://roman-werstka.ru" target="_blank">roman-werstka.ru</a></div>
-	<img class="soundbutton paused" src="images/sound.gif" alt="soundbutton">
-	<audio src="media/ambient.mp3" class="audio" loop=""></audio>
-	<script src="js/script.js"></script>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <a href="#" class="header__link col-2">
+          <img src="img/logo.png" alt="Логотип Неагентство">
+        </a>
+        <nav class="header__nav nav col-6">
+          <ul class="nav__list list-reset flex">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                О нас
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Услуги и цены
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Портфолио
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Декор
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts col-2 flex">
+          <a href="#" class="header__link-contacts">
+            +7 (999) 999 99 99
+          </a>
+          <a href="#" class="header__link-contacts">
+            +7 (999) 999 99 99
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" style="background-color: brown;">Slide 1</div>
+          <div class="swiper-slide" style="background-color: blueviolet;">Slide 2</div>
+          <div class="swiper-slide" style="background-color: green;">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <section>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a, distinctio debitis quis exercitationem
+      quaerat consectetur, aliquam corporis earum itaque mollitia ipsam similique eius qui sapiente hic deleniti
+      perspiciatis nobis.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a, distinctio debitis quis exercitationem
+      quaerat consectetur, aliquam corporis earum itaque mollitia ipsam similique eius qui sapiente hic deleniti
+      perspiciatis nobis.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a, distinctio debitis quis exercitationem
+      quaerat consectetur, aliquam corporis earum itaque mollitia ipsam similique eius qui sapiente hic deleniti
+      perspiciatis nobis.
+    </section>
+  </main>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

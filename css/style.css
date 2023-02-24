@@ -1,12 +1,179 @@
-
-.soundbutton.paused {
-    opacity: .25;
+/* FONTS */
+@font-face {
+  font-family: "Cinzel";
+  src: local("Cinzel-Regular"),
+    url("../fonts/CinzelRegular.woff2") format("woff2"),
+    url("../fonts/CinzelRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-.soundbutton {
-    position: fixed;
-    bottom: 5vh;
-    right: 5vw;
-    cursor: pointer;
-    width: 24px;
-    transition: .25s ease;
+
+@font-face {
+  font-family: "Cinzel";
+  src: local("Cinzel-Medium"),
+    url("../fonts/CinzelMedium.woff2") format("woff2"),
+    url("../fonts/CinzelMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: local("Cinzel-SemiBold"),
+    url("../fonts/CinzelSemiBold.woff2") format("woff2"),
+    url("../fonts/CinzelSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: local("Cinzel-Bold"),
+    url("../fonts/CinzelBold.woff2") format("woff2"),
+    url("../fonts/CinzelBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: local("Cinzel-ExtraBold"),
+    url("../fonts/CinzelExtraBold.woff2") format("woff2"),
+    url("../fonts/CinzelExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: local("Bahnschrift-Regular"),
+    url("../fonts/BahnschriftRegular.woff2") format("woff2"),
+    url("../fonts/BahnschriftRegular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* glob */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #0c0c0c;
+  --pink--color: #ed7a9a;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Bahnschrift', sans-serif;
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1130px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+/* header */
+.header {
+  position: fixed;
+  z-index: 100;
+  padding: 6px 0;
+  height: 106.40px;
+  width: 100%;
+}
+
+.header .container .row {
+  justify-content: space-between;
+}
+
+.header__link img {
+  height: 90px;
+}
+
+.header__nav {
+  margin: auto 0;
+}
+
+.nav__list {
+  justify-content: space-between;
+}
+
+.nav__link {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header__contacts {
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.header__link-contacts {
+  display: inline-block;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 600;
+}
+
+.header__link-contacts:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.is_scrolled .header{
+  background-color: var(--white-color);
+}
+
+/* hero */
+.hero {
+  height: 100vh;
+}
+
+.swiper {
+  height: 100%;
 }

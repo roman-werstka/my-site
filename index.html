@@ -17,12 +17,12 @@
     <div class="container">
       <div class="row">
         <a href="#" class="header__link col-2">
-          <img src="img/logo.png" alt="Логотип Неагентство">
+          <img class="header__logo" src="img/logo.png" alt="Логотип Неагентство">
         </a>
         <nav class="header__nav nav col-6">
           <ul class="nav__list list-reset flex">
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="#about-us" class="nav__link">
                 О нас
               </a>
             </li>
@@ -66,10 +66,24 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide" style="background-color: brown;">Slide 1</div>
-          <div class="swiper-slide" style="background-color: blueviolet;">Slide 2</div>
-          <div class="swiper-slide" style="background-color: green;">Slide 3</div>
-          ...
+          <div class="swiper-slide">
+            <img src="file/slide1.jpg" alt="Свадебное Фото">
+          </div>
+          <div class="swiper-slide">
+            <img src="file/slide2.jpg" alt="Свадебное Фото">
+          </div>
+          <div class="swiper-slide">
+            <img src="file/slide3.jpg" alt="Свадебное Фото">
+          </div>
+          <div class="swiper-slide">
+            <img src="file/slide4.jpg" alt="Свадебное Фото">
+          </div>
+          <div class="swiper-slide">
+            <img src="file/slide5.jpg" alt="Свадебное Фото">
+          </div>
+          <div class="swiper-slide">
+            <img src="file/slide6.jpg" alt="Свадебное Фото">
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -81,17 +95,52 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
+      <div class="container hero__container flex">
+        <div class="row">
+          <h1 class="hero__title col-7">
+            Ne agentstvo
+          </h1>
+          <p class="hero__descr col-6">
+            &laquo;Свадьба&nbsp;&mdash; это целая история любви, свидетелями которой мы&nbsp;становимся. Мы&nbsp;очень
+            счастливые люди, потому что каждый раз, наблюдая за&nbsp;вами, мы&nbsp;наполняемся нежностью&raquo;.
+          </p>
+          <button class="hero__btn btn-reset col-2">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
     </section>
-    <section>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a, distinctio debitis quis exercitationem
-      quaerat consectetur, aliquam corporis earum itaque mollitia ipsam similique eius qui sapiente hic deleniti
-      perspiciatis nobis.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a, distinctio debitis quis exercitationem
-      quaerat consectetur, aliquam corporis earum itaque mollitia ipsam similique eius qui sapiente hic deleniti
-      perspiciatis nobis.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a, distinctio debitis quis exercitationem
-      quaerat consectetur, aliquam corporis earum itaque mollitia ipsam similique eius qui sapiente hic deleniti
-      perspiciatis nobis.
+    <section class="about-us" id="about-us">
+      <div class="container">
+        <div class="row">
+          <h2 class="about-us__title section-title">
+            О нас
+          </h2>
+          <div class="about-us__left col-6">
+            <img src="#" alt="Фото сотрудников агентства">
+          </div>
+          <div class="about-us__right col-6">
+            <h3 class="about-us__subtitle">
+              МЫ&nbsp;НЕ&nbsp;АГЕНСТВО:
+            </h3>
+            <p class="about-us__descr">
+              Наша команда состоит из&nbsp;трёх основательниц, которые с&nbsp;особым трепетом подошли к&nbsp;созданию
+              своего дела.
+              Мы &minus; крепкое плече друг-друга. Однажды нас сплотила идея: создание собственного агентства
+              по&nbsp;организации мероприятий.
+            </p>
+            <p class="about-us__descr">
+              всё онлайн, без строгой записи и&nbsp;привязки к&nbsp;офису
+            </p>
+            <p class="about-us__descr">
+              мы&nbsp;приветствуем дружескую атмосферу
+            </p>
+            <p class="about-us__descr">
+              у&nbsp;нас удобные линии коммуникации
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer></footer>

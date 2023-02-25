@@ -9,7 +9,7 @@
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Cinzel";
   src: local("Cinzel-Medium"),
     url("../fonts/CinzelMedium.woff2") format("woff2"),
@@ -17,9 +17,9 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Cinzel";
   src: local("Cinzel-SemiBold"),
     url("../fonts/CinzelSemiBold.woff2") format("woff2"),
@@ -27,7 +27,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "Cinzel";
@@ -39,7 +39,7 @@
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Cinzel";
   src: local("Cinzel-ExtraBold"),
     url("../fonts/CinzelExtraBold.woff2") format("woff2"),
@@ -47,7 +47,7 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "Bahnschrift";
@@ -71,6 +71,7 @@ html {
 }
 
 :root {
+  --gap: 30px;
   --white-color: #fff;
   --black-color: #0c0c0c;
   --pink--color: #ed7a9a;
@@ -84,6 +85,10 @@ body {
   font-family: 'Bahnschrift', sans-serif;
   color: var(--black-color);
   background-color: var(--white-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', sans-serif;
 }
 
 a {
@@ -125,6 +130,7 @@ a {
 
 .header .container .row {
   justify-content: space-between;
+  border-bottom: solid 2px var(--white-color);
 }
 
 .header__link img {
@@ -144,6 +150,7 @@ a {
   font-size: 14px;
   line-height: 29px;
   font-weight: 500;
+  color: var(--white-color);
   text-transform: uppercase;
 }
 
@@ -159,6 +166,7 @@ a {
   font-size: 14px;
   line-height: 29px;
   font-weight: 600;
+  color: var(--white-color);
 }
 
 .header__link-contacts:not(:last-child) {
@@ -169,11 +177,96 @@ a {
   background-color: var(--white-color);
 }
 
+.is_scrolled .nav__link,
+.is_scrolled .header__link-contacts {
+  color: var(--black-color);
+}
+
+.swiper-slide img {
+  filter: brightness(50%);
+}
+
 /* hero */
 .hero {
+  position: relative;
   height: 100vh;
 }
 
 .swiper {
   height: 100%;
+}
+.hero__container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 50;
+  align-items: center;
+  padding-top: 106.4px;
+  height: 100vh;
+  transform: translateX(-50%);
+}
+
+.hero .row {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: var(--gap);
+  font-size: 70px;
+  line-height: 1.075;
+  font-weight: normal;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: var(--gap);
+  font-size: 26px;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.hero__btn {
+  padding: 13px 26px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--white-color);
+  background-color: var(--pink--color);
+}
+
+/* about-us */
+.about-us {
+  padding-top: 106.4px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: var(--gap);
+  font-size: 36px;
+  line-height: 1.33333;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.about-us__subtitle {
+  margin: 0;
+  margin-bottom: var(--gap);
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+.about-us__descr {
+  margin: 0;
+  margin-bottom: calc((var(--gap)) / 2);
+  font-size: 15px;
+  line-height: 1.66667;
+  font-weight: 300;
 }

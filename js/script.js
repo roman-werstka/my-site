@@ -27,4 +27,6 @@ var minOffset = 50;
       document.body.classList.remove("is_scrolled")
 
     }
-  }
+  };
+
+

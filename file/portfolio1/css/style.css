@@ -1,0 +1,25 @@
+.header-portfolio {
+  background-color: var(--white-color);
+}
+
+.main {
+  padding-top: 106.4px;
+}
+
+.nav__link,
+.header__link-contacts {
+  color: var(--black-color);
+}
+
+.list {
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 5px;
+}
+
+.item img{
+  max-height: 290px;
+}
+

@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/smartphoto.min.css">
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="css/hystmodal.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -19,8 +20,8 @@
       <div class="row">
         <a href="#" class="header__link col-2">
           <!-- <img class="header__logo" src="img/logo.png" alt="Логотип Неагентство"> -->
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.89 74.9">
+          <!-- <?xml version="1.0" encoding="UTF-8"?> -->
+          <svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 107.89 74.9">
             <defs>
               <style>
                 .cls-1 {
@@ -100,11 +101,13 @@
           </ul>
         </nav>
         <div class="header__contacts col-2 flex">
-          <a href="#" class="header__link-contacts">
-            +7 (999) 999 99 99
+          <a href="https://wa.me/79645806769?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."
+            class="header__link-contacts" target="_blank">
+            +7 (964) 580 67 69
           </a>
-          <a href="#" class="header__link-contacts">
-            +7 (999) 999 99 99
+          <a href="https://wa.me/79939011820?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."
+            class="header__link-contacts" target="_blank">
+            +7 (993) 901 18 20
           </a>
         </div>
       </div>
@@ -151,22 +154,22 @@
           <h1 class="hero__title col-7">
             Ne agentstvo
           </h1>
-          <p class="hero__descr col-6">
+          <p class="hero__descr col-5">
             &laquo;Свадьба&nbsp;&mdash; это целая история любви, свидетелями которой мы&nbsp;становимся. Мы&nbsp;очень
             счастливые люди, потому что каждый раз, наблюдая за&nbsp;вами, мы&nbsp;наполняемся нежностью&raquo;.
           </p>
-          <button class="hero__btn btn-reset col-2">
+          <button class="hero__btn btn-reset col-2" data-hystmodal="#myModal">
             Оставить заявку
           </button>
         </div>
       </div>
     </section>
     <section class="about-us" id="about-us">
-      <div class="container">
+      <div class="container flex">
+        <h2 class="about-us__title section-title">
+          О нас
+        </h2>
         <div class="row">
-          <h2 class="about-us__title section-title">
-            О нас
-          </h2>
           <h3 class="about-us__slogan">
             Осуществим под &laquo;ключ&raquo; <i>Свадьбу Вашей мечты!</i>
           </h3>
@@ -197,15 +200,15 @@
             <p class="about-us__descr">
               у&nbsp;нас удобные линии коммуникации
             </p>
-            <button class="about-us__btn btn btn-reset">
-              Записать на консультацию Whats app
+            <button class="about-us__btn btn btn-reset" data-hystmodal="#myModal">
+              Записать на консультацию
             </button>
           </div>
         </div>
       </div>
     </section>
     <section class="advantage">
-      <div class="container">
+      <div class="container flex">
         <h2 class="advantage__title section-title">
           Наше преимущество
         </h2>
@@ -403,7 +406,7 @@
       </div>
     </section>
     <section class="portfolio" id="portfolio">
-      <div class="container">
+      <div class="container flex">
         <h2 class="portfolio__title section-title">
           Портфолио
         </h2>
@@ -468,7 +471,7 @@
         </div>
       </div>
     </section>
-    <section class="fake">
+    <section class="fake" id="services">
       <div class="container">
         <div class="row">
           <div class="fake__image col-10">
@@ -488,8 +491,8 @@
         </div>
       </div>
     </section>
-    <section class="services" id="services">
-      <div class="container">
+    <section class="services">
+      <div class="container flex">
         <h2 class="services__title section-title">
           Услуги и&nbsp;цены
         </h2>
@@ -583,7 +586,7 @@
       </div>
     </section>
     <section class="contacts" id="contacts">
-      <div class="container">
+      <div class="container flex">
         <h2 class="contacts__title section-title">
           Контакты
         </h2>
@@ -596,16 +599,47 @@
               Оставьте заявку и&nbsp;мы&nbsp;дадим вам бесплатную консультацию
             </h3>
             <div class="contacts__links flex">
-              <a class="contacts__link" href="#">
-                7 (999) 999 99 99
-              </a>
-              <a class="contacts__link" href="#">
-                neagenstvo@mail.ru
-              </a>
-              <a class="contacts__link" href="#">
-                info@gmail.com
-              </a>
-              <button class="contacts__btn btn-reset btn">
+              <div class="contacts__phone flex">
+                <a class="contacts__link"
+                  href="https://wa.me/79645806769?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."
+                  target="_blank">
+                  +7 (964) 580 67 69
+                </a>
+                <a class="contacts__link"
+                  href="https://wa.me/79939011820?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."
+                  target="_blank">
+                  +7 (993) 901 18 20
+                </a>
+              </div>
+              <div class="contacts__social flex">
+                <a href="https://vk.com/ne_agentstvo_msc" class="contacts__vk" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 24 24">
+                    <path
+                      d="M15.07294,2H8.9375C3.33331,2,2,3.33331,2,8.92706V15.0625C2,20.66663,3.32294,22,8.92706,22H15.0625C20.66669,22,22,20.67706,22,15.07288V8.9375C22,3.33331,20.67706,2,15.07294,2Zm3.07287,14.27081H16.6875c-.55206,0-.71875-.44793-1.70831-1.4375-.86463-.83331-1.22919-.9375-1.44794-.9375-.30206,0-.38544.08332-.38544.5v1.3125c0,.35419-.11456.5625-1.04162.5625a5.69214,5.69214,0,0,1-4.44794-2.66668A11.62611,11.62611,0,0,1,5.35419,8.77081c0-.21875.08331-.41668.5-.41668H7.3125c.375,0,.51044.16668.65625.55212.70831,2.08331,1.91669,3.89581,2.40625,3.89581.1875,0,.27081-.08331.27081-.55206V10.10413c-.0625-.97913-.58331-1.0625-.58331-1.41663a.36008.36008,0,0,1,.375-.33337h2.29169c.3125,0,.41662.15625.41662.53125v2.89587c0,.3125.13544.41663.22919.41663.1875,0,.33331-.10413.67706-.44788a11.99877,11.99877,0,0,0,1.79169-2.97919.62818.62818,0,0,1,.63544-.41668H17.9375c.4375,0,.53125.21875.4375.53125A18.20507,18.20507,0,0,1,16.41669,12.25c-.15625.23956-.21875.36456,0,.64581.14581.21875.65625.64582,1,1.05207a6.48553,6.48553,0,0,1,1.22912,1.70837C18.77081,16.0625,18.5625,16.27081,18.14581,16.27081Z" />
+                  </svg>
+                  <a href="https://wa.me/79645806769?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."
+                    class="contacts__whatsapp" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 24 24">
+                      <path
+                        d="M22,6.55a12.61,12.61,0,0,0-.1-1.29,4.29,4.29,0,0,0-.37-1.08,3.66,3.66,0,0,0-.71-1,3.91,3.91,0,0,0-1-.71,4.28,4.28,0,0,0-1.08-.36A10.21,10.21,0,0,0,17.46,2H6.55a12.61,12.61,0,0,0-1.29.1,4.29,4.29,0,0,0-1.08.37,3.66,3.66,0,0,0-1,.71,3.91,3.91,0,0,0-.71,1,4.28,4.28,0,0,0-.36,1.08A10.21,10.21,0,0,0,2,6.54C2,6.73,2,7,2,7.08v9.84c0,.11,0,.35,0,.53a12.61,12.61,0,0,0,.1,1.29,4.29,4.29,0,0,0,.37,1.08,3.66,3.66,0,0,0,.71,1,3.91,3.91,0,0,0,1,.71,4.28,4.28,0,0,0,1.08.36A10.21,10.21,0,0,0,6.54,22H17.45a12.61,12.61,0,0,0,1.29-.1,4.29,4.29,0,0,0,1.08-.37,3.66,3.66,0,0,0,1-.71,3.91,3.91,0,0,0,.71-1,4.28,4.28,0,0,0,.36-1.08A10.21,10.21,0,0,0,22,17.46c0-.19,0-.43,0-.54V7.08C22,7,22,6.73,22,6.55ZM12.23,19h0A7.12,7.12,0,0,1,8.8,18.1L5,19.1l1-3.72a7.11,7.11,0,0,1-1-3.58A7.18,7.18,0,1,1,12.23,19Zm0-13.13A6,6,0,0,0,7.18,15l.14.23-.6,2.19L9,16.8l.22.13a6,6,0,0,0,3,.83h0a6,6,0,0,0,6-6,6,6,0,0,0-6-6Zm3.5,8.52a1.82,1.82,0,0,1-1.21.85,2.33,2.33,0,0,1-1.12-.07,8.9,8.9,0,0,1-1-.38,8,8,0,0,1-3.06-2.7,3.48,3.48,0,0,1-.73-1.85,2,2,0,0,1,.63-1.5.65.65,0,0,1,.48-.22H10c.11,0,.26,0,.4.31s.51,1.24.56,1.33a.34.34,0,0,1,0,.31,1.14,1.14,0,0,1-.18.3c-.09.11-.19.24-.27.32s-.18.18-.08.36a5.56,5.56,0,0,0,1,1.24,5,5,0,0,0,1.44.89c.18.09.29.08.39,0s.45-.52.57-.7.24-.15.4-.09,1.05.49,1.23.58.29.13.34.21A1.56,1.56,0,0,1,15.73,14.36Z" />
+                    </svg>
+                  </a>
+                  <a href="https://t.me/viktoriya161295" class="contacts__telegram" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 24 24">
+                      <path
+                        d="M11.99432,2a10,10,0,1,0,10,10A9.99917,9.99917,0,0,0,11.99432,2Zm3.17951,15.15247a.70547.70547,0,0,1-1.002.3515l-2.71467-2.10938L9.71484,17.002a.29969.29969,0,0,1-.285.03894l.334-2.98846.01069.00848.00683-.059s4.885-4.44751,5.084-4.637c.20147-.189.135-.23.135-.23.01147-.23053-.36152,0-.36152,0L8.16632,13.299l-2.69549-.918s-.414-.1485-.453-.475c-.041-.324.46649-.5.46649-.5l10.717-4.25751s.881-.39252.881.25751Z" />
+                    </svg>
+                  </a>
+                  <a href="https://instagram.com/ne_agentstvo_msc?igshid=YmMyMTA" class="contacts__social-icon"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" baseprofile="tiny" version="1.2" viewbox="0 0 24 24">
+                      <path
+                        d="M18 3H6C4.3 3 3 4.3 3 6v12c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V6c0-1.7-1.3-3-3-3zm-6 6c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm3.8-2c0-.7.6-1.2 1.2-1.2s1.2.6 1.2 1.2-.5 1.2-1.2 1.2-1.2-.5-1.2-1.2zM18 19H6c-.6 0-1-.4-1-1v-6h2c0 2.8 2.2 5 5 5s5-2.2 5-5h2v6c0 .6-.4 1-1 1z" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+              <button class="contacts__btn btn-reset btn" data-hystmodal="#myModal">
                 Оставить заявку
               </button>
             </div>
@@ -652,7 +686,27 @@
       </div>
     </div>
   </footer>
-  <script src="js/smartphoto.min.js"></script>
+  <div class="hystmodal" id="myModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button data-hystclose class="hystmodal__close">Закрыть</button>
+        <div class="modal">
+          <form class="modal__form flex">
+            <h2 class="modal__title">
+              Оставьте заявку и мы свяжемся в ближайшее время
+            </h2>
+            <input class="modal__input" type="text" name="name" placeholder="Имя" required>
+            <input class="modal__input" type="tel" name="tel" placeholder="Телефон" required>
+            <div id="form_result"></div>
+            <button id="submit" type="submit" class="btn-reset btn modal__btn" value="Заказать звонок">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/hystmodal.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>

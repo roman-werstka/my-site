@@ -48,7 +48,6 @@ html {
   --hover-pink--color: #fb9cb7;
   --active-pink--color: #888;
 }
-/* #f94175 */
 
 img {
   max-width: 100%;
@@ -60,7 +59,12 @@ body {
   background-color: var(--white-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Cinzel', sans-serif;
 }
 
@@ -106,10 +110,6 @@ a {
   border-bottom: solid 2px var(--white-color);
 }
 
-/* .header__link img {
-  height: 90px;
-} */
-
 .header__link {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -153,15 +153,15 @@ a {
   transition: opacity 0.3s ease-in-out;
 }
 
-.nav__link:focus::before  {
+.nav__link:focus::before {
   opacity: 1;
 }
 
-.nav__link:hover::before  {
+.nav__link:hover::before {
   opacity: 1;
 }
 
-.nav__link:active::before  {
+.nav__link:active::before {
   opacity: 0;
 }
 
@@ -209,7 +209,7 @@ a {
   margin-bottom: 10px;
 }
 
-.is_scrolled .header{
+.is_scrolled .header {
   background-color: var(--white-color);
 }
 
@@ -221,10 +221,6 @@ a {
 .is_scrolled .header__link-contacts {
   color: var(--black-color);
 }
-
-/* .swiper-slide img {
-  filter: brightness(50%);
-} */
 
 .swiper-slide {
   filter: brightness(50%);
@@ -263,14 +259,13 @@ a {
 .hero {
   position: relative;
   height: 100vh;
-  background: -webkit-linear-gradient(0deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
-  background: linear-gradient(0deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
 }
 
 .swiper {
   max-width: 1980px;
   height: 100%;
 }
+
 .hero__container {
   position: absolute;
   top: 0;
@@ -409,8 +404,8 @@ a {
 /* advantage */
 .advantage {
   padding-top: 106.4px;
-  background: -webkit-linear-gradient(180deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
-  background: linear-gradient(180deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
+  background: -webkit-linear-gradient(180deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
+  background: linear-gradient(180deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
 }
 
 .advantage .container {
@@ -465,8 +460,8 @@ a {
 .portfolio {
   padding-top: 106.4px;
   min-height: 732.56px;
-  background: -webkit-linear-gradient(0deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
-  background: linear-gradient(0deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
+  background: -webkit-linear-gradient(0deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
+  background: linear-gradient(0deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
 }
 
 .portfolio .container {
@@ -544,8 +539,8 @@ a {
 /* fake */
 .fake {
   padding-top: 106.4px;
-  background: -webkit-linear-gradient(180deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
-  background: linear-gradient(180deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
+  background: -webkit-linear-gradient(180deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
+  background: linear-gradient(180deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
 }
 
 .fake .row {
@@ -598,8 +593,8 @@ a {
 /* services */
 .services {
   padding-top: 106.4px;
-  background: -webkit-linear-gradient(0deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
-  background: linear-gradient(0deg,#fff, #f6f7f8,#e1e8f2,#d9e1ee);
+  background: -webkit-linear-gradient(0deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
+  background: linear-gradient(0deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
 }
 
 .services .container {
@@ -638,6 +633,7 @@ a {
 
 .services__iner-dop {
   flex-direction: column;
+  min-height: 140px;
 }
 
 .services__subtitle {
@@ -656,6 +652,7 @@ a {
 
 .services__list-dop {
   justify-content: center;
+  align-items: flex-start;
 }
 
 .services__item-dop {
@@ -680,9 +677,60 @@ a {
   margin-top: auto;
 }
 
+.services__link--active {
+  color: var(--active-pink--color);
+}
+
+.services__info {
+  display: none;
+  margin-bottom: 0;
+}
+
+.services__info--active {
+  display: block;
+}
+
+/* decor */
+.decor {
+  padding-top: 106.4px;
+  background: -webkit-linear-gradient(180deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
+  background: linear-gradient(180deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
+}
+
+.decor .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.decor__image {
+  box-shadow: 0 0 5px #888;
+}
+
+.decor__descr {
+  margin: 0;
+  margin-bottom: calc((var(--gap)) / 2);
+}
+
+.decor .row:not(:last-child) {
+  margin-bottom: var(--gap);
+}
+
+.decor__left,
+.decor__right {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.decor__list {
+  margin: 0;
+  list-style: none;
+}
+
 /* contacts */
 .contacts {
   padding-top: 106.4px;
+  background: -webkit-linear-gradient(0deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
+  background: linear-gradient(0deg, #fff, #f6f7f8, #e1e8f2, #d9e1ee);
 }
 
 .contacts .container {
@@ -836,5 +884,3 @@ a {
 .modal__input:nth-child(3) {
   margin-bottom: 25px;
 }
-
-

@@ -66,20 +66,23 @@ $("#submit").click(function () {
 });
 
 // tabs===========================
-let tabsBtn = document.querySelectorAll('.services__link');
-let tabsItem = document.querySelectorAll('.services__info');
+// let tabsBtn = document.querySelectorAll('.services__link');
+// let tabsItem = document.querySelectorAll('.services__info');
 
-tabsBtn.forEach(function(element){
-  element.addEventListener('click', function(e){
-    const path = e.currentTarget.dataset.path;
+// tabsBtn.forEach(function(element){
+//   element.addEventListener('click', function(e){
+//     const path = e.currentTarget.dataset.path;
 
-    tabsBtn.forEach(function(btn){ btn.classList.remove('services__link--active')});
-    e.currentTarget.classList.add('services__link--active');
+//     tabsBtn.forEach(function(btn){ btn.classList.remove('services__link--active')});
+//     e.currentTarget.classList.add('services__link--active');
 
-    tabsItem.forEach(function(element){ element.classList.remove('services__info--active')});
-    document.querySelector(`[data-target="${path}"]`).classList.add('services__info--active');
-  });
-})
+//     tabsItem.forEach(function(element){ element.classList.remove('services__info--active')});
+//     document.querySelector(`[data-target="${path}"]`).classList.add('services__info--active');
+//   });
+// })
 
+
+// new Accordion('.accordion-container');
+new Accordion(['.container-first', '.container-second'], {});
 
 

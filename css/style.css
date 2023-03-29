@@ -139,6 +139,7 @@ a {
   font-weight: 500;
   color: var(--white-color);
   text-transform: uppercase;
+  text-shadow: black 0 0 2px;
 }
 
 .nav__link::before {
@@ -179,6 +180,7 @@ a {
   line-height: 29px;
   font-weight: 600;
   color: var(--white-color);
+  text-shadow: black 0 0 2px;
 }
 
 .header__link-contacts::before {
@@ -220,10 +222,11 @@ a {
 .is_scrolled .nav__link,
 .is_scrolled .header__link-contacts {
   color: var(--black-color);
+  text-shadow: none;
 }
 
 .swiper-slide {
-  filter: brightness(50%);
+  filter: brightness(70%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -290,6 +293,7 @@ a {
   font-weight: normal;
   color: var(--white-color);
   text-transform: uppercase;
+  text-shadow: black 0 0 2px;
 }
 
 .hero__descr {
@@ -299,6 +303,7 @@ a {
   line-height: normal;
   font-weight: 400;
   color: var(--white-color);
+  text-shadow: black 0 0 2px;
 }
 
 .hero__btn,
@@ -616,6 +621,7 @@ a {
 }
 
 .services__list {
+  align-items: flex-start;
   margin-bottom: var(--gap);
 }
 
@@ -637,13 +643,50 @@ a {
 }
 
 .services__subtitle {
-  margin: 0;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
   border-bottom: solid 2px var(--pink--color);
   border-radius: 20px;
   font-weight: 400;
   text-align: center;
+}
+
+.ac .ac-panel .ac-text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.66667;
+  font-weight: 300;
+}
+
+.ac {
+  border: none;
+  background: inherit;
+}
+
+.ac .ac-header {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.ac .ac-trigger {
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+}
+
+.ac .ac-trigger::after {
+  content: "";
+}
+
+.services__subtitle button:hover {
+  transform: scale(1.14);
+  transition: transform 0.3s ease-in-out;
+}
+
+.services__item.is-active img {
+  display: none;
 }
 
 .services__iner img {
@@ -682,7 +725,6 @@ a {
 }
 
 .services__info {
-  display: none;
   margin-bottom: 0;
 }
 

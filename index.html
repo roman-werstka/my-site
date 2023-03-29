@@ -8,6 +8,7 @@
   <title>Не агентство – организаций мероприятий!</title>
   <link rel="icon" href="img/favicon.png" type="image/png">
   <script src="js/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="css/accordion.min.css">
   <link rel="stylesheet" href="css/hystmodal.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -480,112 +481,183 @@
         <p class="services__descr">
           что входит в&nbsp;услугу <i>&laquo;Организация свадьбы под ключ&raquo;</i>...
         </p>
-        <ul class="row services__list list-reset">
-          <li class="services__item col-4">
+        <ul class="row services__list list-reset container-first">
+          <li class="services__item col-4 ac">
             <div class="services__iner">
-              <h3 class="services__subtitle">
-                Организация свадьбы
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Организация свадьбы
+                </button>
               </h3>
               <img src="img/serv3.jpg" alt="Фото организации свадьбы">
+              <div class="ac-panel">
+                <p class="ac-text services__dop-text">
+                  Разработка концепции свадьбы
+                  грамотное распределение бюджета
+                  подбор места проведения свадебного мероприятия (ресторан, база отдыха, загородная площадка, отели
+                  в&nbsp;Москве и&nbsp;Московской области)
+                  подбор места для утренних сборов жениха и&nbsp;невесты (отели, гостиницы, апартаменты
+                  и&nbsp;т.д.&nbsp;в&nbsp;близости от&nbsp;места площадки или ЗАГСа)
+                  подбор квалифицированных исполнителей
+                  разработка технических заданий для подрядчиков
+                  подготовка свадебного торжества
+                  организация утренних сборов жениха и&nbsp;невесты
+                  разработка программы и&nbsp;тайминга по&nbsp;пунктам
+                  разработка плана&nbsp;Б
+                  полное ведение торжества
+                </p>
+              </div>
             </div>
           </li>
-          <li class="services__item col-4">
+          <li class="services__item col-4 ac">
             <div class="services__iner">
-              <h3 class="services__subtitle">
-                Забота о ваших гостях
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Забота о ваших гостях
+                </button>
               </h3>
               <img src="img/serv2.jpg" alt="Фото заботы о гостях">
+              <div class="ac-panel">
+                <p class="ac-text services__dop-text">
+                  Всех ваших гостей мы&nbsp;берем на&nbsp;себя в&nbsp;независимости от&nbsp;их&nbsp;количества
+                  организация и&nbsp;помощь с&nbsp;поздравлениями молодоженам
+                  расселение и&nbsp;трансфер гостям при необходимости
+                  помощь отдельным категориям гостей
+                  организация досуга для детей
+                  разработка вариантов развлечений на&nbsp;welcome зоне
+                  помощь в&nbsp;случае форс-мажоров
+                </p>
+              </div>
             </div>
           </li>
-          <li class="services__item col-4">
+          <li class="services__item col-4 ac">
             <div class="services__iner">
-              <h3 class="services__subtitle">
-                Торжественный день
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Торжественный день
+                </button>
               </h3>
               <img src="img/serv1.jpg" alt="Фот торжественного дня">
+              <div class="ac-panel">
+                <p class="ac-text services__dop-text">
+                  Координация всех процессов в&nbsp;день свадьбы по&nbsp;чек-листу
+                  занимаемся расчетами, проводим встречи, контролируем соблюдение сроков, поставку цветов, работу
+                  фирм-подрядчиков и&nbsp;площадки
+                  помощь в&nbsp;сборах жениха и&nbsp;невесты
+                  постоянное взаимодействие с&nbsp;молодыми и&nbsp;выполнение их&nbsp;просьб
+                  помощь в&nbsp;завершении свадебного дня (сбор оставшегося после банкета/фуршета в&nbsp;ресторане/кафе
+                  алкоголя, цветов, еды)
+                  вызов такси вам и&nbsp;вашим гостям при необходимости
+                  решение форс-мажоров
+                </p>
+              </div>
             </div>
           </li>
         </ul>
         <p class="services__descr">
           Что наше агенство может вам предложить дополнительно...
         </p>
-        <ul class="row services__list-dop list-reset">
-          <li class="services__item-dop col-4">
+        <ul class="row services__list-dop list-reset container-second">
+          <li class="services__item-dop col-4 ac">
             <div class="services__iner-dop flex">
-              <h3 class="services__subtitle">
-                Девичники, Мальчишники
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Девичники, Мальчишники
+                </button>
               </h3>
               <p class="services__text">
                 В&nbsp;подарок при организации свадьбы
               </p>
-              <button class="services__link btn-reset" data-path="one">
-                подробнее...
-              </button>
-              <p class="services__info" data-target="one">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam, aperiam numquam, quasi
-                corrupti consectetur architecto quod tenetur repellendus ad cumque nobis sunt eius error distinctio esse
-                adipisci! Non, cupiditate?
-              </p>
+              <div class="ac-panel">
+                <p class="ac-text services__info">
+                  Организация мальчишника и&nbsp;девичника под ваш бюджет и&nbsp;желаний
+                  подбор места проведения
+                  подбор фотографа или видеографа при необходимости
+                  подбор диджея и&nbsp;ведущего
+                  помощь в&nbsp;подборе тематической бутафории
+                  Стоимость услуги без организации свадьбы 12&nbsp;000 рублей
+                </p>
+              </div>
             </div>
           </li>
-          <li class="services__item-dop col-4">
+          <li class="services__item-dop col-4 ac">
             <div class="services__iner-dop flex">
-              <h3 class="services__subtitle">
-                Корпаротивы, Юбилеи и&nbsp;дни Рождения&nbsp;&mdash; от&nbsp;20&nbsp;000
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Корпаротивы, Юбилеи и&nbsp;дни Рождения&nbsp;&mdash; от&nbsp;20&nbsp;000
+                </button>
               </h3>
-              <button class="services__link btn-reset" data-path="two">
-                подробнее...
-              </button>
-              <p class="services__info" data-target="two">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam, aperiam numquam, quasi
-                corrupti consectetur architecto quod tenetur repellendus ad cumque nobis sunt eius error distinctio esse
-                adipisci! Non, cupiditate?
-              </p>
+              <div class="ac-panel">
+                <p class="ac-text services__info">
+                  Организуем ваш праздник под ключ:
+                  Разработка концепции вашего праздника
+                  Распределим грамотно ваш бюджет
+                  Подберем место для праздничного торжества
+                  Подберем квалифицированных исполнителей
+                  разработка программы и&nbsp;тайминга по&nbsp;пунктам
+                </p>
+              </div>
             </div>
           </li>
-          <li class="services__item-dop col-4">
+          <li class="services__item-dop col-4 ac">
             <div class="services__iner-dop flex">
-              <h3 class="services__subtitle">
-                Дополнительный координатор от&nbsp;20&nbsp;000
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Отдельная координация от&nbsp;20&nbsp;000
+                </button>
               </h3>
-              <button class="services__link btn-reset" data-path="three">
-                подробнее...
-              </button>
-              <p class="services__info" data-target="three">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam, aperiam numquam, quasi
-                corrupti consectetur architecto quod tenetur repellendus ad cumque nobis sunt eius error distinctio esse
-                adipisci! Non, cupiditate?
-              </p>
+              <div class="ac-panel">
+                <p class="ac-text services__info">
+                  Подходит для тех, кто организовал свадьбу самостоятельно и&nbsp;Вы понимаете, что не&nbsp;обходим
+                  профессионал, который возьмет всю заботу и&nbsp;контроль всех процессов и&nbsp;вопросов в&nbsp;такой
+                  важный день. Ваша задача передать всю информацию и&nbsp;контакты подрядчиков нашему координатору,
+                  а&nbsp;мы
+                  занимаемся расчетами,
+                  проведем встречи,
+                  проконтролируем соблюдение сроков,
+                  поставку цветов, работу фирм-подрядчиков и&nbsp;площадки
+                  окажем помощь в&nbsp;сборах жениха и&nbsp;невесты
+                  постоянное взаимодействие с&nbsp;молодыми и&nbsp;выполнение их&nbsp;просьб
+                  помощь в&nbsp;завершении свадебного дня (сбор оставшегося после банкета/фуршета в&nbsp;ресторане/кафе
+                  алкоголя, цветов, еды)
+                  вызов такси вам и&nbsp;вашим гостям при необходимости
+                  решение форс-мажоров
+                </p>
+              </div>
             </div>
           </li>
-          <li class="services__item-dop col-4">
+          <li class="services__item-dop col-4 ac">
             <div class="services__iner-dop flex">
-              <h3 class="services__subtitle">
-                Подбор площадки
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Подбор площадки
+                </button>
               </h3>
-              <button class="services__link btn-reset" data-path="four">
-                подробнее...
-              </button>
-              <p class="services__info" data-target="four">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam, aperiam numquam, quasi
-                corrupti consectetur architecto quod tenetur repellendus ad cumque nobis sunt eius error distinctio esse
-                adipisci! Non, cupiditate?
-              </p>
+              <div class="ac-panel">
+                <p class="ac-text services__info">
+                  Если вам необходима помощь только в&nbsp;подборе площадки без организации самого дня,
+                  то&nbsp;мы&nbsp;это сделаем по&nbsp;символической цене- за&nbsp;5000&nbsp;рублей. *Все&nbsp;же, если
+                  после подбора площадки вы&nbsp;решите заключить с&nbsp;нами договор на&nbsp;организацию мероприятия,
+                  то&nbsp;предоставим вам скидку в&nbsp;размере этой&nbsp;же суммы за&nbsp;подбор
+                </p>
+              </div>
             </div>
           </li>
-          <li class="services__item-dop col-4">
+          <li class="services__item-dop col-4 ac">
             <div class="services__iner-dop flex">
-              <h3 class="services__subtitle">
-                Декор вашего торжества
+              <h3 class="services__subtitle ac-header">
+                <button type="button" class="ac-trigger">
+                  Декор вашего торжества
+                </button>
               </h3>
-              <button class="services__link btn-reset" data-path="five">
-                подробнее...
-              </button>
-              <p class="services__info" data-target="five">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam, aperiam numquam, quasi
-                corrupti consectetur architecto quod tenetur repellendus ad cumque nobis sunt eius error distinctio esse
-                adipisci! Non, cupiditate?
-              </p>
+              <div class="ac-panel">
+                <p class="ac-text services__info">
+                  У&nbsp;нас своя студия декора
+                  Если у&nbsp;вас все выбрано, но&nbsp;остался только декор,
+                  Мы&nbsp;с&nbsp;удовольствием украсим ваше торжество
+                  Стоимость декора зависит только от&nbsp;ваших пожеланий
+                </p>
+              </div>
             </div>
           </li>
         </ul>
@@ -776,6 +848,7 @@
       </div>
     </div>
   </div>
+  <script src="js/accordion.min.js"></script>
   <script src="js/hystmodal.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>

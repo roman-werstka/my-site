@@ -30,21 +30,21 @@ window.onscroll = function () {
 };
 
 
-// Modal===============================
+// Modal====================================================================
 const myModal = new HystModal({
   linkAttributeName: "data-hystmodal",
   // настройки (не обязательно), см. API
 });
 
 
-// jquery===================
+// jquery====================================================================
 if (window.jQuery) {
   console.log("Yes")
 } else {
   console.log("No")
 }
 
-// form================
+// form=======================================================================
 $("#submit").click(function () {
   var name = $('input[name=fio]').val();
   var tel = $('input[name=tel]').val();
@@ -65,24 +65,19 @@ $("#submit").click(function () {
   }
 });
 
-// tabs===========================
-// let tabsBtn = document.querySelectorAll('.services__link');
-// let tabsItem = document.querySelectorAll('.services__info');
-
-// tabsBtn.forEach(function(element){
-//   element.addEventListener('click', function(e){
-//     const path = e.currentTarget.dataset.path;
-
-//     tabsBtn.forEach(function(btn){ btn.classList.remove('services__link--active')});
-//     e.currentTarget.classList.add('services__link--active');
-
-//     tabsItem.forEach(function(element){ element.classList.remove('services__info--active')});
-//     document.querySelector(`[data-target="${path}"]`).classList.add('services__info--active');
-//   });
-// })
+// Accordion============================================================================
+new Accordion(['.container-first', '.container-second', '.container-third'], {});
 
 
-// new Accordion('.accordion-container');
-new Accordion(['.container-first', '.container-second'], {});
+// ===============================
+const btnMore = document.querySelector('.portfolio-more');
+const portfolioItem = document.querySelectorAll('.portfolio__item');
+
+btnMore.addEventListener('click', () => {
+
+  portfolioItem.forEach(el => {el.classList.add('portfolio__item--visible') });
+
+  btnMore.classList.add('portfolio-more--hidden');
+});
 
 

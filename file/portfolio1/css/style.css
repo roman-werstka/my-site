@@ -14,10 +14,23 @@
 .nav__link,
 .header__link-contacts {
   color: var(--black-color);
+  text-shadow: none;
+}
+
+.portfolio__text {
+  margin-bottom: 10px;
+  text-shadow: none;
+}
+
+.list__portfolio {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .list {
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .item {

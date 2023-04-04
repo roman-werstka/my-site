@@ -1,0 +1,42 @@
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-portfolio {
+  background-color: var(--white-color);
+}
+
+.main {
+  padding-top: 106.4px;
+}
+
+.nav__link,
+.header__link-contacts {
+  color: var(--black-color);
+  text-shadow: none;
+}
+
+.portfolio__text {
+  margin-bottom: 10px;
+  text-shadow: none;
+}
+
+.list__portfolio {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.list {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item {
+  padding: 5px;
+}
+
+.item img {
+  max-height: 290px;
+}

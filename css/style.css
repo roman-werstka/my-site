@@ -539,7 +539,15 @@ a {
   margin-bottom: var(--gap);
 }
 
-.portfolio-more--hidden {
+.portfolio-more .on {
+  display: none;
+}
+
+.portfolio-more--hidden .on {
+  display: block;
+}
+
+.portfolio-more--hidden .off {
   display: none;
 }
 

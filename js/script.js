@@ -75,9 +75,9 @@ const portfolioItem = document.querySelectorAll('.portfolio__item');
 
 btnMore.addEventListener('click', () => {
 
-  portfolioItem.forEach(el => {el.classList.add('portfolio__item--visible') });
+  portfolioItem.forEach(el => {el.classList.toggle('portfolio__item--visible') });
 
-  btnMore.classList.add('portfolio-more--hidden');
+  btnMore.classList.toggle('portfolio-more--hidden');
 });
 
 

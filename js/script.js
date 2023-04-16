@@ -66,18 +66,7 @@ $("#submit").click(function () {
 });
 
 // Accordion============================================================================
-new Accordion(['.container-first', '.container-second', '.container-third'], {});
-
-
-// ===============================
-const btnMore = document.querySelector('.portfolio-more');
-const portfolioItem = document.querySelectorAll('.portfolio__item');
-
-btnMore.addEventListener('click', () => {
-
-  portfolioItem.forEach(el => {el.classList.toggle('portfolio__item--visible') });
-
-  btnMore.classList.toggle('portfolio-more--hidden');
+new Accordion(['.container-first', '.container-second', '.container-third'], {
+  showMultiple: true,
 });
-
 

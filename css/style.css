@@ -504,51 +504,14 @@ a {
 }
 
 .portfolio__list {
-  position: relative;
-  left: 100px;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-bottom: calc(var(--gap) + 200px);
 }
 
 .portfolio__item {
   position: relative;
-  margin-bottom: calc(var(--gap) * 2);
+  margin-bottom: 24px;
   transition: transform 0.3s ease-in-out;
-}
-
-.portfolio__item:nth-child(3n+2) {
-  right: 100px;
-  top: 100px;
-}
-
-.portfolio__item:nth-child(3n) {
-  right: 200px;
-  top: 200px;
-}
-
-.portfolio__item:nth-child(n + 4) {
-  display: none;
-}
-
-.portfolio__item.portfolio__item--visible {
-  display: block;
-}
-
-.portfolio-more {
-  margin-bottom: var(--gap);
-}
-
-.portfolio-more .on {
-  display: none;
-}
-
-.portfolio-more--hidden .on {
-  display: block;
-}
-
-.portfolio-more--hidden .off {
-  display: none;
 }
 
 .portfolio__item img {
@@ -564,7 +527,7 @@ a {
 .porfolio__iner {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
   padding: 5px;
   color: var(--white-color);
 }
@@ -678,7 +641,7 @@ a {
 
 .services__iner-dop {
   flex-direction: column;
-  min-height: 140px;
+  min-height: 176px;
 }
 
 .services__subtitle {
@@ -711,14 +674,39 @@ a {
 }
 
 .ac .ac-trigger {
-  padding: 0;
+  margin-top: auto;
   font: inherit;
   color: inherit;
   text-align: inherit;
+  transition: color 0.3s ease-in-out;
 }
 
 .ac .ac-trigger::after {
   content: "";
+}
+
+.ac .ac-trigger svg {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  fill: var(--pink--color);
+  transform: translate(0, -50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ac .ac-trigger svg path {
+  fill: var(--black-color);
+}
+
+.ac.is-active .ac-trigger svg {
+  transform: translate(0, -50%) rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+.services__iner .ac-trigger:hover,
+.services__iner-dop .ac-trigger:hover {
+  color: var(--hover-pink--color);
 }
 
 .ac.is-active>.ac-header .ac-trigger::after {
@@ -755,15 +743,6 @@ a {
 
 .fake__iner .is-active .link--active {
   display: block;
-}
-
-.services__subtitle button:hover {
-  transform: scale(1.14);
-  transition: transform 0.3s ease-in-out;
-}
-
-.services__item.is-active img {
-  display: none;
 }
 
 .services__iner img {
@@ -807,6 +786,13 @@ a {
 
 .services__info--active {
   display: block;
+}
+
+.services__svg {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  fill: var(--pink--color);
 }
 
 /* decor */
